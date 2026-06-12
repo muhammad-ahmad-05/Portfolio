@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure root elements don't hide the -z-10 canvas */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; /* Force transparency */
+}
+
+/* Base body background (rendered at the absolute bottom layer) */
+body {
+  background-color: #050505; /* Your dark aesthetic */
+}

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Cyberpunk System Theme Configuration */
+@theme {
+  --color-cyber-bg: #0a0a0c;
+  --color-cyber-card: #121215;
+  --color-neon-cyan: #00f0ff;
+  --color-neon-magenta: #ff007f;
+  --color-brutal-gray: #8e8e93;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+/* Base Level Styles & Smooth Scroll Anchoring */
+@layer base {
+  html, body {
+    background-color: var(--color-cyber-bg);
+    color: #ffffff;
+    font-family: var(--font-display);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Custom minimal brutalist scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-cyber-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #222226;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-neon-cyan);
+  }
+}
+
+/* Utility layout helper for fixing the 3D Canvas wrapper background */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ui-container {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+
+
+/* Ensure root elements don't hide the -z-10 canvas */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: transparent; /* Force transparency */
+}
+
+/* Base body background (rendered at the absolute bottom layer) */
+body {
+  background-color: #050505; /* Your dark aesthetic */
+}
