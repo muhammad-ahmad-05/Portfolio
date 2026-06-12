@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "chatapp-ae90c"
+  },
+  "targets": {
+    "chatapp-ae90c": {
+      "hosting": {
+        "main-site": [
+          "muhammad-ahmad-05"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

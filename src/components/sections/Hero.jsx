@@ -53,7 +53,7 @@ const Hero = () => {
           */}
           <div className=' overflow-hidden size-fit pl-4 backdrop-blur-md bg-black/30 border border-white/20 rounded-xl shadow-lg p-6'>
           <p className="reveal-text text-lg md:text-xl text-white max-w-2xl font-medium pointer-events-auto leading-relaxed">
-            Lahore, Pakistan | Building scalable MERN applications, optimizing C++ memory, and architecting seamless digital logistics.
+            Lahore, Pakistan | Transforming complex problems into responsive, cross-platform web and mobile applications.
           </p>
           </div>
         </div>
